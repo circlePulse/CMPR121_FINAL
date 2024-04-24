@@ -1,6 +1,13 @@
 #include "PersonType.h"
 #include <iostream>
 
+/*
+ * Data:
+ * std::string fName
+ * std::string lName
+ * int SSN
+ */
+
 PersonType::PersonType() {
     SSN = 0;
 }
