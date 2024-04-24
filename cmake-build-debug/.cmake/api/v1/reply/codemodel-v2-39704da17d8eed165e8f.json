@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CMPR121_FINAL",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CMPR121_FINAL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CMPR121_FINAL-Debug-a64dfecdb42a133ab166.json",
+					"name" : "CMPR121_FINAL",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/omarhboubati/Library/CloudStorage/GoogleDrive-omarhbo23@gmail.com/My Drive/Academics/Community College/Santa Ana Community College/CMPR-121-37589/CMPR121_FINAL/cmake-build-debug",
+		"source" : "/Users/omarhboubati/Library/CloudStorage/GoogleDrive-omarhbo23@gmail.com/My Drive/Academics/Community College/Santa Ana Community College/CMPR-121-37589/CMPR121_FINAL"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
