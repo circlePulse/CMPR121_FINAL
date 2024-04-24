@@ -14,4 +14,10 @@ PersonType::PersonType(const std::string &newfName, const std::string &newlName,
     SSN = newSSN;
 }
 
+void PersonType::setPersonInfo(const std::string &newfName, const std::string &newlName, int newSSN) {
+    fName = newfName;
+    lName = newlName;
+    SSN = newSSN;
+}
+
 PersonType::~PersonType() = default;

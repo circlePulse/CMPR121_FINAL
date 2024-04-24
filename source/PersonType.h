@@ -10,10 +10,16 @@
 
 class PersonType {
 public:
+    // Default constructor
     PersonType();
 
+    // Overloaded Constructor
     PersonType(const std::string &newfName, const std::string &newlName, int newSSN);
 
+    // Settors
+    void setPersonInfo(const std::string &newfName, const std::string &newlName, int newSSN);
+
+    // Destructor
     ~PersonType();
 
 private:
