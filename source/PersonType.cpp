@@ -24,11 +24,11 @@ void PersonType::setPersonInfo(const std::string &newfName, const std::string &n
     SSN = newSSN;
 }
 
-void PersonType::printName() {
+void PersonType::printName() const {
     std::cout << lName << ", " << fName;
 }
 
-void PersonType::printPersonInfo() {
+void PersonType::printPersonInfo() const {
     printSSN();
     std::cout << " " << fName << " " << lName;
 }

@@ -20,9 +20,9 @@ public:
     void setPersonInfo(const std::string &newfName, const std::string &newlName, int newSSN);
 
     // printers
-    void printPersonInfo();
+    void printPersonInfo() const;
 
-    void printName();
+    void printName() const;
 
     void printSSN() const;
 
