@@ -13,3 +13,5 @@ PersonType::PersonType(const std::string &newfName, const std::string &newlName,
     lName = newlName;
     SSN = newSSN;
 }
+
+PersonType::~PersonType() = default;

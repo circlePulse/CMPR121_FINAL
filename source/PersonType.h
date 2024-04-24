@@ -14,6 +14,8 @@ public:
 
     PersonType(const std::string &newfName, const std::string &newlName, int newSSN);
 
+    ~PersonType();
+
 private:
     std::string fName;
     std::string lName;
