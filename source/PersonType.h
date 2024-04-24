@@ -19,6 +19,13 @@ public:
     // Settors
     void setPersonInfo(const std::string &newfName, const std::string &newlName, int newSSN);
 
+    // printers
+    void printPersonInfo();
+
+    void printName();
+
+    void printSSN() const;
+
     // Gettors
     std::string getFirstName();
 
