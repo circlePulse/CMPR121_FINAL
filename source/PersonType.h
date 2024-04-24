@@ -10,6 +10,10 @@
 
 class PersonType {
 public:
+    PersonType();
+
+    PersonType(const std::string &newfName, const std::string &newlName, int newSSN);
+
 private:
     std::string fName;
     std::string lName;
