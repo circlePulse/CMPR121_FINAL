@@ -1,8 +1,5 @@
-//
-// Created by Omar Hboubati on 4/24/24.
-//
-
 #include "PersonType.h"
+#include <iostream>
 
 PersonType::PersonType() {
     SSN = 0;
@@ -19,5 +16,18 @@ void PersonType::setPersonInfo(const std::string &newfName, const std::string &n
     lName = newlName;
     SSN = newSSN;
 }
+
+std::string PersonType::getFirstName() {
+    return fName;
+}
+
+std::string PersonType::getLastName() {
+    return lName;
+}
+
+int PersonType::getSSN() const {
+    return SSN;
+}
+
 
 PersonType::~PersonType() = default;

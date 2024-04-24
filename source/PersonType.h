@@ -19,6 +19,14 @@ public:
     // Settors
     void setPersonInfo(const std::string &newfName, const std::string &newlName, int newSSN);
 
+    // Gettors
+    std::string getFirstName();
+
+    std::string getLastName();
+
+    int getSSN() const;
+
+
     // Destructor
     ~PersonType();
 
