@@ -9,6 +9,7 @@ using namespace std;
 // I added a test person driving code in order to test the class. You can delete it after
 // Also Jetbrains CLion is WAY better than xCode
 // I also added the 3 print functions that we had left to finish part A
+// TODO: Format the printSSN thingy correctly
 
 int main() {
     // using default constructor
