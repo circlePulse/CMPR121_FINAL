@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ibrahimmemon/Documents/GitHub/CMPR121_Final
+# Install script for directory: /Users/omarhboubati/Library/CloudStorage/GoogleDrive-omarhbo23@gmail.com/My Drive/Academics/Community College/Santa Ana Community College/CMPR-121-37589/CMPR121_FINAL
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/Library/Developer/CommandLineTools/usr/bin/objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/ibrahimmemon/Documents/GitHub/CMPR121_Final/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/omarhboubati/Library/CloudStorage/GoogleDrive-omarhbo23@gmail.com/My Drive/Academics/Community College/Santa Ana Community College/CMPR-121-37589/CMPR121_FINAL/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
