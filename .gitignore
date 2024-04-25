@@ -5,6 +5,7 @@ cmake-build-release/
 # Exclude other possible build dirs
 build/
 out/
+.run/
 
 # Exclude CMake cache & generated files
 CMakeCache.txt
