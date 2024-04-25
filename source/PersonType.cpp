@@ -33,15 +33,15 @@ void PersonType::printName() const {
     std::cout << lName << ", " << fName;
 }
 
+void PersonType::printSSN() const {
+    cout << to_string(SSN).substr(0, 3) << "-" << to_string(SSN).substr(4, 2) << "-" << to_string(SSN).substr(6, 4);
+}
+
 // Printing
 
 void PersonType::printPersonInfo() const {
     printSSN();
     cout << " " << fName << " " << lName;
-}
-
-void PersonType::printSSN() {
-    cout << to_string(SSN).substr(0,3) << "-" << to_string(SSN).substr(4,2) << "-" << to_string(SSN).substr(6,4);
 }
 
 // Gettors
