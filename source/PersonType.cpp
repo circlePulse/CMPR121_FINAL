@@ -1,6 +1,7 @@
 #include "PersonType.h"
 #include <iostream>
-
+#include <string>
+using namespace std;
 /*
  * Data:
  * std::string fName
@@ -36,20 +37,20 @@ void PersonType::printName() const {
 
 void PersonType::printPersonInfo() const {
     printSSN();
-    std::cout << " " << fName << " " << lName;
+    cout << " " << fName << " " << lName;
 }
 
-void PersonType::printSSN() const {
-    std::cout << SSN;
+void PersonType::printSSN() {
+    cout << to_string(SSN).substr(0,3) << "-" << to_string(SSN).substr(4,2) << "-" << to_string(SSN).substr(6,4);
 }
 
 // Gettors
 
-std::string PersonType::getFirstName() {
+string PersonType::getFirstName() {
     return fName;
 }
 
-std::string PersonType::getLastName() {
+string PersonType::getLastName() {
     return lName;
 }
 
