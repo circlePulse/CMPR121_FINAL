@@ -15,7 +15,7 @@ PersonType::PersonType() {
 }
 
 // overloaded constructor
-PersonType::PersonType(const std::string &newfName, const std::string &newlName, int newSSN) {
+PersonType::PersonType(const string &newfName, const string &newlName, int newSSN) {
     fName = newfName;
     lName = newlName;
     SSN = newSSN;
@@ -23,14 +23,14 @@ PersonType::PersonType(const std::string &newfName, const std::string &newlName,
 
 // Settors
 
-void PersonType::setPersonInfo(const std::string &newfName, const std::string &newlName, int newSSN) {
+void PersonType::setPersonInfo(const string &newfName, const string &newlName, int newSSN) {
     fName = newfName;
     lName = newlName;
     SSN = newSSN;
 }
 
 void PersonType::printName() const {
-    std::cout << lName << ", " << fName;
+    cout << lName << ", " << fName;
 }
 
 void PersonType::printSSN() const {
