@@ -8,15 +8,19 @@
  * int SSN
  */
 
+// default constructor
 PersonType::PersonType() {
     SSN = 0;
 }
 
+// overloaded constructor
 PersonType::PersonType(const std::string &newfName, const std::string &newlName, int newSSN) {
     fName = newfName;
     lName = newlName;
     SSN = newSSN;
 }
+
+// Settors
 
 void PersonType::setPersonInfo(const std::string &newfName, const std::string &newlName, int newSSN) {
     fName = newfName;
@@ -28,6 +32,8 @@ void PersonType::printName() const {
     std::cout << lName << ", " << fName;
 }
 
+// Printing
+
 void PersonType::printPersonInfo() const {
     printSSN();
     std::cout << " " << fName << " " << lName;
@@ -36,6 +42,8 @@ void PersonType::printPersonInfo() const {
 void PersonType::printSSN() const {
     std::cout << SSN;
 }
+
+// Gettors
 
 std::string PersonType::getFirstName() {
     return fName;
