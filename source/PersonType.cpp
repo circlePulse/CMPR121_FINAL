@@ -34,7 +34,16 @@ void PersonType::printName() const {
 }
 
 void PersonType::printSSN() const {
-    cout << to_string(SSN).substr(0, 3) << "-" << to_string(SSN).substr(4, 2) << "-" << to_string(SSN).substr(6, 4);
+    const string SSN_string = to_string(SSN);
+    cout << SSN_string[0] << SSN_string[1] << SSN_string[2];
+    cout << "-";
+    cout << SSN_string[3] << SSN_string[4] << SSN_string[5];
+    cout << "-";
+    cout << SSN_string[6] << SSN_string[7] << SSN_string[8];
+    /*cout << SSN_string.substr(0, 3) << "-"
+            << SSN_string.substr(3, 2) << "-"
+            << SSN_string.substr(5, 4);*/
+    //cout << to_string(SSN).substr(0, 3) << "-" << to_string(SSN).substr(4, 2) << "-" << to_string(SSN).substr(6, 4);
 }
 
 // Printing
@@ -54,7 +63,7 @@ string PersonType::getLastName() {
     return lName;
 }
 
-int PersonType::getSSN() const {
+int PersonType::getSSN() {
     return SSN;
 }
 

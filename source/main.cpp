@@ -14,7 +14,6 @@ using namespace std;
 int main() {
     // using default constructor
     PersonType personType1;
-    personType1.printPersonInfo();
     personType1.setPersonInfo("Ibrahim", "Memon", 989898989);
     personType1.printPersonInfo();
 
