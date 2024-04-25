@@ -11,8 +11,17 @@ using namespace std;
 // I also added the 3 print functions that we had left to finish part A
 
 int main() {
+    // using default constructor
     PersonType personType1;
+    personType1.printPersonInfo();
     personType1.setPersonInfo("Ibrahim", "Memon", 989898989);
     personType1.printPersonInfo();
+
+    cout << endl;
+
+    // using overloaded constructor
+    PersonType personType2("Omar", "Hboubati", 849839823);
+    personType2.printPersonInfo();
+
     return 0;
 }
