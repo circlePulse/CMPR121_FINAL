@@ -21,7 +21,7 @@ int main() {
     cout << endl;
 
     // using overloaded constructor
-    PersonType personType2("Omar", "Hboubati", 849839823);
+    PersonType personType2("Omar", "Hbo", 849839823);
     personType2.printPersonInfo();
 
     return 0;

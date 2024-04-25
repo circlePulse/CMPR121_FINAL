@@ -11,6 +11,6 @@
 -- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
--- Configuring done (0.9s)
+-- Configuring done (0.5s)
 -- Generating done (0.0s)
 -- Build files have been written to: /Users/omarhboubati/Library/CloudStorage/GoogleDrive-omarhbo23@gmail.com/My Drive/Academics/Community College/Santa Ana Community College/CMPR-121-37589/CMPR121_FINAL/cmake-build-debug
