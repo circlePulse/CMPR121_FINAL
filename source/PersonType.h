@@ -29,7 +29,7 @@ public:
 
     std::string getLastName();
 
-    int getSSN();
+    int getSSN() const;
 
 
     // Destructor

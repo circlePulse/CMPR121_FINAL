@@ -54,9 +54,10 @@ string PersonType::getLastName() {
     return lName;
 }
 
-int PersonType::getSSN() {
+int PersonType::getSSN() const {
     return SSN;
 }
 
 
 PersonType::~PersonType() = default;
+
