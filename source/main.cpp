@@ -6,11 +6,7 @@
 #include "PersonType.h"
 using namespace std;
 
-// I added a test person driving code in order to test the class. You can delete it after
-// Also Jetbrains CLion is WAY better than xCode
-// I also added the 3 print functions that we had left to finish part A
-// TODO: Implement `this` keyword and -> operator
-// TODO: Better commenting
+// TODO: BetterImp commenting
 
 
 int main() {

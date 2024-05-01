@@ -10,10 +10,10 @@ public:
     PersonType();
 
     // Overloaded Constructor
-    PersonType(const std::string &newfName, const std::string &newlName, int newSSN);
+    PersonType(const std::string &fName, const std::string &lName, int SSN);
 
     // Settors
-    void setPersonInfo(const std::string &newfName, const std::string &newlName, int newSSN);
+    void setPersonInfo(const std::string &fName, const std::string &lName, int SSN);
 
     // printers
     void printPersonInfo() const;

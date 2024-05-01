@@ -11,22 +11,22 @@ using namespace std;
 
 // default constructor
 PersonType::PersonType() {
-    SSN = 0;
+    this->SSN = 0;
 }
 
 // overloaded constructor
-PersonType::PersonType(const string &newfName, const string &newlName, int newSSN) {
-    fName = newfName;
-    lName = newlName;
-    SSN = newSSN;
+PersonType::PersonType(const string &fName, const string &lName, int SSN) {
+    this->fName = fName;
+    this->lName = lName;
+    this->SSN = SSN;
 }
 
 // Settors
 
-void PersonType::setPersonInfo(const string &newfName, const string &newlName, int newSSN) {
-    fName = newfName;
-    lName = newlName;
-    SSN = newSSN;
+void PersonType::setPersonInfo(const string &fName, const string &lName, int SSN) {
+    this->fName = fName;
+    this->lName = lName;
+    this->SSN = SSN;
 }
 
 void PersonType::printName() const {
