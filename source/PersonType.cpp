@@ -34,7 +34,8 @@ void PersonType::printName() const {
 }
 
 void PersonType::printSSN() const {
-    cout << to_string(SSN).substr(0, 3) << "-" << to_string(SSN).substr(3, 3) << "-" << to_string(SSN).substr(6, 4);
+    string stringSSN = to_string(SSN);
+    cout << stringSSN.substr(0, 3) << "-" << stringSSN.substr(3, 3) << "-" << stringSSN.substr(6, 4);
 }
 
 // Printing

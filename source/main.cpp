@@ -6,7 +6,7 @@
 #include "PersonType.h"
 using namespace std;
 
-// TODO: BetterImp commenting
+// TODO: Better commenting
 
 
 int main() {
