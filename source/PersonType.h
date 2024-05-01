@@ -3,8 +3,6 @@
 
 #include <string>
 
-using namespace std;
-
 
 class PersonType {
 public:
@@ -12,10 +10,10 @@ public:
     PersonType();
 
     // Overloaded Constructor
-    PersonType(const string &newfName, const string &newlName, int newSSN);
+    PersonType(const std::string &newfName, const std::string &newlName, int newSSN);
 
     // Settors
-    void setPersonInfo(const string &newfName, const string &newlName, int newSSN);
+    void setPersonInfo(const std::string &newfName, const std::string &newlName, int newSSN);
 
     // printers
     void printPersonInfo() const;
@@ -25,9 +23,9 @@ public:
     void printSSN() const;
 
     // Gettors
-    string getFirstName();
+    std::string getFirstName();
 
-    string getLastName();
+    std::string getLastName();
 
     int getSSN() const;
 
@@ -36,8 +34,8 @@ public:
     ~PersonType();
 
 private:
-    string fName;
-    string lName;
+    std::string fName;
+    std::string lName;
     int SSN;
 };
 
