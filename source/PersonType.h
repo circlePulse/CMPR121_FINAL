@@ -25,9 +25,9 @@ public:
     void printSSN() const;
 
     // Gettors
-    std::string getFirstName();
+    string getFirstName();
 
-    std::string getLastName();
+    string getLastName();
 
     int getSSN() const;
 
