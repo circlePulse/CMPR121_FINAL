@@ -1,6 +1,12 @@
+/*
+ * FILENAME: PersonType.h
+ */
+
+// making sure the header file is included only once
 #ifndef PERSONTYPE_H
 #define PERSONTYPE_H
 
+// importing string library
 #include <string>
 
 
