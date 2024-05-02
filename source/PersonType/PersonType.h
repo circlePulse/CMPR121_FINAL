@@ -1,5 +1,5 @@
 /*
- * FILENAME: PersonType.h
+ * FILENAME: PersonType/PersonType.h
  */
 
 // making sure the header file is included only once

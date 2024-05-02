@@ -1,5 +1,5 @@
 /*
- * FILENAME: PersonType.cpp
+ * FILENAME: PersonType/PersonType.cpp
  *
  * Data:
  * string fName

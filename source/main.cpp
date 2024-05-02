@@ -5,7 +5,7 @@
 // importing iostream library for cout
 #include <iostream>
 // importing PersonType class
-#include "PersonType.h"
+#include "PersonType/PersonType.h"
 using namespace std;
 
 

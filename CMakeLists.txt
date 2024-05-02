@@ -4,5 +4,7 @@ project(CMPR121_FINAL)
 set(CMAKE_CXX_STANDARD 26)
 
 add_executable(CMPR121_FINAL source/main.cpp
-        source/PersonType.h
-        source/PersonType.cpp)
+        source/PersonType/PersonType.h
+        source/PersonType/PersonType.cpp
+        source/CandidateType/CandidateType.cpp
+        source/CandidateType/CandidateType.h)
