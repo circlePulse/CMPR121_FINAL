@@ -26,7 +26,7 @@ int main() {
     // calling printPersonInfo
     personType2.printPersonInfo();
 
-    cout << "\n" << endl;
+    cout << endl;
 
 
     // Test CandidateType class
@@ -36,14 +36,11 @@ int main() {
     candidateType1.setPersonInfo("John", "Doe", 111223333);
     candidateType1.updateVotesByCampus(0, 25);
     candidateType1.updateVotesByCampus(1, 15);
-    cout << "Total votes for candidate " << candidateType1.getFirstName() << ": " << candidateType1.getTotalVotes() <<
-            endl;
 
     candidateType1.printCandidateInfo();
+    candidateType1.printCandidateTotalVotes();
 
-    for (int i = 0; i < NUM_OF_CAMPUSES; ++i) {
-        cout << "Votes from campus " << i << ": " << candidateType1.getVotesByCampus(i) << endl;
-    }
+    candidateType1.printCandidateCampusVotes();
 
     return 0;
 }

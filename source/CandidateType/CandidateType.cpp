@@ -12,6 +12,8 @@
  */
 #include "CandidateType.h"
 
+#include <iostream>
+
 // default constructor -- called if no arguments are passed
 CandidateType::CandidateType() : campusVotes{0}, votes(0) {
 }
@@ -41,6 +43,17 @@ int CandidateType::getVotesByCampus(const int campus) const {
 
 void CandidateType::printCandidateInfo() const {
  this->printPersonInfo();
+}
+
+void CandidateType::printCandidateTotalVotes() const {
+ std::cout << this->fName << ", " << this->lName << "\n     -> Total Votes (all campuses): " << this->votes << "\n";
+}
+
+void CandidateType::printCandidateCampusVotes() const {
+ std::cout << this->fName << ", " << this->lName << "\n";
+ for (int i = 0; i < NUM_OF_CAMPUSES; i++) {
+  std::cout << "     -> Campus " << (i + 1) << " Votes: " << this->campusVotes[i] << "\n";
+ }
 }
 
 // private function to update votes
