@@ -14,9 +14,26 @@ This is the current repository for the group project.
 
 You can ignore all the other folders and files!
 
-## Project progress:
+## Project Progress:
 - [x] ~~Part A (`Resources/Final Project _ Part A.pdf`)~~
   - [ ] UML
 - [ ] ~~Part B (`Resources/CMPR 121 - Final Project _ Part B.pdf`)~~
   - [ ] UML
 - [ ] (not assigned yet) Spec file (`Resources/CMPR 121 - Final Project Format.pdf`)
+
+## Current Driver Output:
+```
+Testing PersonType class
+989-898-989 Ibrahim Memon
+123-456-789 Omar Hbo
+
+Testing CandidateType class
+111-223-333 John Doe
+John, Doe
+     -> Total Votes (all campuses): 40
+John, Doe
+     -> Campus 1 total votes: 25
+     -> Campus 2 total votes: 15
+     -> Campus 3 total votes: 0
+     -> Campus 4 total votes: 0
+```
