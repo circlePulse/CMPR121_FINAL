@@ -14,7 +14,6 @@
 // importing string library
 #include <string>
 #include <utility>
-using namespace std;
 
 
 // default constructor -- called if no arguments are passed
@@ -23,12 +22,13 @@ PersonType::PersonType(): SSN(0) {
 
 // overloaded constructor -- called if arguments are passed
 // accepts 3 arguments: fName, lName, SSN
-PersonType::PersonType(string fName, string lName, const int SSN) : fName(move(fName)), lName(move(lName)), SSN(SSN) {
+PersonType::PersonType(std::string fName, std::string lName, const int SSN) : fName(move(fName)), lName(move(lName)),
+                                                                              SSN(SSN) {
 }
 
 // Settors
 // accepts 3 arguments: fName, lName, SSN
-void PersonType::setPersonInfo(const string &fName, const string &lName, const int SSN) {
+void PersonType::setPersonInfo(const std::string &fName, const std::string &lName, const int SSN) {
     this->fName = fName;
     this->lName = lName;
     this->SSN = SSN;
@@ -36,26 +36,26 @@ void PersonType::setPersonInfo(const string &fName, const string &lName, const i
 
 // printers
 void PersonType::printName() const {
-    cout << lName << ", " << fName;
+    std::cout << lName << ", " << fName;
 }
 
 void PersonType::printSSN() const {
-    const string stringSSN = to_string(SSN);
-    cout << stringSSN.substr(0, 3) << "-" << stringSSN.substr(3, 3) << "-" << stringSSN.substr(6, 4);
+    const std::string stringSSN = std::to_string(SSN);
+    std::cout << stringSSN.substr(0, 3) << "-" << stringSSN.substr(3, 3) << "-" << stringSSN.substr(6, 4);
 }
 
 void PersonType::printPersonInfo() const {
     printSSN();
-    cout << " " << fName << " " << lName;
+    std::cout << " " << fName << " " << lName;
 }
 
 // Gettors
 
-string PersonType::getFirstName() {
+std::string PersonType::getFirstName() {
     return fName;
 }
 
-string PersonType::getLastName() {
+std::string PersonType::getLastName() {
     return lName;
 }
 
