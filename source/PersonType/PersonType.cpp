@@ -46,7 +46,7 @@ void PersonType::printSSN() const {
 
 void PersonType::printPersonInfo() const {
     printSSN();
-    std::cout << " " << fName << " " << lName;
+    std::cout << " " << fName << " " << lName << std::endl;
 }
 
 // Gettors

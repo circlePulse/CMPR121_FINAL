@@ -23,6 +23,9 @@ public:
 
  [[nodiscard]] int getVotesByCampus(int campus) const;
 
+ // printers
+ void printCandidateInfo() const;
+
  // destructor
  ~CandidateType();
 

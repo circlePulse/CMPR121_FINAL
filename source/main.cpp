@@ -20,8 +20,6 @@ int main() {
     // testing printPersonInfo
     personType1.printPersonInfo();
 
-    // newline
-    cout << endl;
 
     // testing overloaded constructor
     const PersonType personType2("Omar", "Hbo", 123456789);
@@ -40,6 +38,8 @@ int main() {
     candidateType1.updateVotesByCampus(1, 15);
     cout << "Total votes for candidate " << candidateType1.getFirstName() << ": " << candidateType1.getTotalVotes() <<
             endl;
+
+    candidateType1.printCandidateInfo();
 
     for (int i = 0; i < NUM_OF_CAMPUSES; ++i) {
         cout << "Votes from campus " << i << ": " << candidateType1.getVotesByCampus(i) << endl;

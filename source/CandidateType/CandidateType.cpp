@@ -38,6 +38,10 @@ int CandidateType::getVotesByCampus(const int campus) const {
  return this->campusVotes[campus];
 }
 
+void CandidateType::printCandidateInfo() const {
+ this->printPersonInfo();
+}
+
 // private function to update votes
 void CandidateType::p_updateVotes() {
  this->votes = 0;
