@@ -17,16 +17,12 @@ using namespace std;
 
 
 // default constructor -- called if no arguments are passed
-PersonType::PersonType() {
-    this->SSN = 0;
+PersonType::PersonType(): SSN(0) {
 }
 
 // overloaded constructor -- called if arguments are passed
 // accepts 3 arguments: fName, lName, SSN
-PersonType::PersonType(const string &fName, const string &lName, int SSN) {
-    this->fName = fName;
-    this->lName = lName;
-    this->SSN = SSN;
+PersonType::PersonType(const string &fName, const string &lName, int SSN) : fName(fName), lName(lName), SSN(SSN) {
 }
 
 // Settors

@@ -1,5 +1,5 @@
 /*
-* FILENAME: CandidateType/CandidateType.h
+ * FILENAME: CandidateType/CandidateType.h
  */
 
 #pragma once
