@@ -13,6 +13,7 @@
 #include <iostream>
 // importing string library
 #include <string>
+#include <utility>
 using namespace std;
 
 
@@ -22,12 +23,12 @@ PersonType::PersonType(): SSN(0) {
 
 // overloaded constructor -- called if arguments are passed
 // accepts 3 arguments: fName, lName, SSN
-PersonType::PersonType(const string &fName, const string &lName, int SSN) : fName(fName), lName(lName), SSN(SSN) {
+PersonType::PersonType(string fName, string lName, const int SSN) : fName(move(fName)), lName(move(lName)), SSN(SSN) {
 }
 
 // Settors
 // accepts 3 arguments: fName, lName, SSN
-void PersonType::setPersonInfo(const string &fName, const string &lName, int SSN) {
+void PersonType::setPersonInfo(const string &fName, const string &lName, const int SSN) {
     this->fName = fName;
     this->lName = lName;
     this->SSN = SSN;

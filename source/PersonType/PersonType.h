@@ -16,7 +16,7 @@ public:
     PersonType();
 
     // Overloaded Constructor
-    PersonType(const std::string &fName, const std::string &lName, int SSN);
+    PersonType(std::string fName, std::string lName, int SSN);
 
     // Settors
     void setPersonInfo(const std::string &fName, const std::string &lName, int SSN);
@@ -33,7 +33,7 @@ public:
 
     std::string getLastName();
 
-    int getSSN() const;
+    [[nodiscard]] int getSSN() const;
 
 
     // Destructor
