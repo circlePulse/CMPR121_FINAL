@@ -52,7 +52,7 @@ void CandidateType::printCandidateTotalVotes() const {
 void CandidateType::printCandidateCampusVotes() const {
  std::cout << this->fName << ", " << this->lName << "\n";
  for (int i = 0; i < NUM_OF_CAMPUSES; i++) {
-  std::cout << "     -> Campus " << (i + 1) << " Votes: " << this->campusVotes[i] << "\n";
+  std::cout << "     -> Campus " << (i + 1) << " total votes: " << this->campusVotes[i] << "\n";
  }
 }
 
