@@ -1,7 +1,8 @@
 /*
  * FILENAME: CandidateType/CandidateType.cpp
+ * DESC: Implementation of CandidateType class
  *
- * Data:
+ * DATA:
  * Parent: PersonType
  * string fName
  * string lName

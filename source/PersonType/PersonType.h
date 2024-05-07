@@ -1,5 +1,6 @@
 /*
  * FILENAME: PersonType/PersonType.h
+ * DESC: Specification file for PersonType class
  */
 
 // making sure the header file is included only once

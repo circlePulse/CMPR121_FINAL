@@ -1,7 +1,8 @@
 /*
  * FILENAME: PersonType/PersonType.cpp
+ * DESC: Implementation of PersonType class
  *
- * Data:
+ * DATA:
  * string fName
  * string lName
  * int SSN

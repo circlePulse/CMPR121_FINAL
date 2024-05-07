@@ -1,5 +1,6 @@
 /*
  * FILENAME: CandidateType/CandidateType.h
+ * DESC: Specification file for CandidateType class
  */
 
 #pragma once
