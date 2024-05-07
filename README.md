@@ -16,5 +16,7 @@ You can ignore all the other folders and files!
 
 ## Project progress:
 - [x] ~~Part A (`Resources/Final Project _ Part A.pdf`)~~
-- [ ] Part B Progress: on `printCandidateInfo` (`Resources/CMPR 121 - Final Project _ Part B.pdf`)
+  - [ ] UML
+- [ ] ~~Part B (`Resources/CMPR 121 - Final Project _ Part B.pdf`)~~
+  - [ ] UML
 - [ ] (not assigned yet) Spec file (`Resources/CMPR 121 - Final Project Format.pdf`)
