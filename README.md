@@ -20,7 +20,7 @@ You can generally ignore all the other folders and files!
 
 - [x] ~~Part A (`Resources/Final Project _ Part A.pdf`)~~
     - [x] ~~UML~~
-- [ ] ~~Part B (`Resources/CMPR 121 - Final Project _ Part B.pdf`)~~
+- [x] ~~Part B (`Resources/CMPR 121 - Final Project _ Part B.pdf`)~~
     - [ ] UML
 - [ ] (not assigned yet) Spec file (`Resources/CMPR 121 - Final Project Format.pdf`)
 
