@@ -1,2 +1,3 @@
 Editor link: https://www.mermaidchart.com/app/projects/b1619864-c6e0-4745-a024-37ac3846a4ad/diagrams/3bcd926d-13cc-45fc-9889-1a9d548ef7d1/version/v0.1/edit
 SVG link: https://www.mermaidchart.com/raw/3bcd926d-13cc-45fc-9889-1a9d548ef7d1?theme=dark&version=v0.1&format=svg
+Documentation: https://mermaid.js.org/syntax/classDiagram.html
