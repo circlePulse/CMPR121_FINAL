@@ -17,7 +17,11 @@
 #include <iostream>
 
 // default constructor -- called if no arguments are passed
-CandidateType::CandidateType() : campusVotes{0}, votes(0) {
+CandidateType::CandidateType() {
+ for (int i = 0; i < NUM_OF_CAMPUSES; i++) {
+  this->campusVotes[i] = 0;
+ }
+ this->votes = 0;
  this->SSN = 0;
 }
 

@@ -35,7 +35,7 @@ public:
  ~CandidateType();
 
 private:
- int campusVotes[NUM_OF_CAMPUSES];
+ int campusVotes[NUM_OF_CAMPUSES]{};
  int votes;
 
  void p_updateVotes();

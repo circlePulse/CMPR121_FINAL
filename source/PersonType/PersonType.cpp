@@ -18,13 +18,16 @@
 
 
 // default constructor -- called if no arguments are passed
-PersonType::PersonType(): SSN(0) {
+PersonType::PersonType() {
+    this->SSN = 0;
 }
 
 // overloaded constructor -- called if arguments are passed
 // accepts 3 arguments: fName, lName, SSN
-PersonType::PersonType(std::string fName, std::string lName, const int SSN) : fName(move(fName)), lName(move(lName)),
-                                                                              SSN(SSN) {
+PersonType::PersonType(std::string fName, std::string lName, const int SSN) {
+    this->fName = fName;
+    this->lName = lName;
+    this->SSN = SSN;
 }
 
 // Settors
