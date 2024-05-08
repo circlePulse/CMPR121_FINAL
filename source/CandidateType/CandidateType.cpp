@@ -8,6 +8,8 @@
  * string lName
  * int SSN
  *
+ * int[] campusVotes
+ * int votes
  *
  */
 #include "CandidateType.h"
@@ -16,6 +18,7 @@
 
 // default constructor -- called if no arguments are passed
 CandidateType::CandidateType() : campusVotes{0}, votes(0) {
+ this->SSN = 0;
 }
 
 // settors
