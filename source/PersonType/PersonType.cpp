@@ -65,11 +65,11 @@ void PersonType::printPersonInfo() const {
 // Gettors
 
 std::string PersonType::getFirstName() {
-    return fName;
+    return this->fName;
 }
 
 std::string PersonType::getLastName() {
-    return lName;
+    return this->lName;
 }
 
 int PersonType::getSSN() const {

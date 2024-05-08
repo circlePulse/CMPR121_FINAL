@@ -22,7 +22,7 @@ CandidateType::CandidateType() {
   this->campusVotes[i] = 0;
  }
  this->votes = 0;
- this->SSN = 0;
+ this->setSSN(0);
 }
 
 // settors
