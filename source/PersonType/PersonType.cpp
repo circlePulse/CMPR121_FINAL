@@ -42,7 +42,7 @@ void PersonType::printName() const {
 
 void PersonType::printSSN() const {
     const std::string stringSSN = std::to_string(SSN);
-    std::cout << stringSSN.substr(0, 3) << "-" << stringSSN.substr(3, 3) << "-" << stringSSN.substr(6, 4);
+    std::cout << stringSSN.substr(0, 3) << "-" << stringSSN.substr(3, 2) << "-" << stringSSN.substr(5, 4);
 }
 
 void PersonType::printPersonInfo() const {
