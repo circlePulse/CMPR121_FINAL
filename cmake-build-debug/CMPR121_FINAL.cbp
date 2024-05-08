@@ -76,10 +76,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ibrahimmemon/Documents/GitHub/CMPR121_Final/source/PersonType.cpp">
+		<Unit filename="/Users/ibrahimmemon/Documents/GitHub/CMPR121_Final/source/CandidateType/CandidateType.cpp">
 			<Option target="CMPR121_FINAL"/>
 		</Unit>
-		<Unit filename="/Users/ibrahimmemon/Documents/GitHub/CMPR121_Final/source/PersonType.h">
+		<Unit filename="/Users/ibrahimmemon/Documents/GitHub/CMPR121_Final/source/CandidateType/CandidateType.h">
+			<Option target="CMPR121_FINAL"/>
+		</Unit>
+		<Unit filename="/Users/ibrahimmemon/Documents/GitHub/CMPR121_Final/source/PersonType/PersonType.cpp">
+			<Option target="CMPR121_FINAL"/>
+		</Unit>
+		<Unit filename="/Users/ibrahimmemon/Documents/GitHub/CMPR121_Final/source/PersonType/PersonType.h">
 			<Option target="CMPR121_FINAL"/>
 		</Unit>
 		<Unit filename="/Users/ibrahimmemon/Documents/GitHub/CMPR121_Final/source/main.cpp">

@@ -129,29 +129,53 @@ CMPR121_FINAL/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMPR121_FINAL.dir/build.make CMakeFiles/CMPR121_FINAL.dir/build
 .PHONY : CMPR121_FINAL/fast
 
-source/PersonType.o: source/PersonType.cpp.o
-.PHONY : source/PersonType.o
+source/CandidateType/CandidateType.o: source/CandidateType/CandidateType.cpp.o
+.PHONY : source/CandidateType/CandidateType.o
 
 # target to build an object file
-source/PersonType.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMPR121_FINAL.dir/build.make CMakeFiles/CMPR121_FINAL.dir/source/PersonType.cpp.o
-.PHONY : source/PersonType.cpp.o
+source/CandidateType/CandidateType.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMPR121_FINAL.dir/build.make CMakeFiles/CMPR121_FINAL.dir/source/CandidateType/CandidateType.cpp.o
+.PHONY : source/CandidateType/CandidateType.cpp.o
 
-source/PersonType.i: source/PersonType.cpp.i
-.PHONY : source/PersonType.i
+source/CandidateType/CandidateType.i: source/CandidateType/CandidateType.cpp.i
+.PHONY : source/CandidateType/CandidateType.i
 
 # target to preprocess a source file
-source/PersonType.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMPR121_FINAL.dir/build.make CMakeFiles/CMPR121_FINAL.dir/source/PersonType.cpp.i
-.PHONY : source/PersonType.cpp.i
+source/CandidateType/CandidateType.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMPR121_FINAL.dir/build.make CMakeFiles/CMPR121_FINAL.dir/source/CandidateType/CandidateType.cpp.i
+.PHONY : source/CandidateType/CandidateType.cpp.i
 
-source/PersonType.s: source/PersonType.cpp.s
-.PHONY : source/PersonType.s
+source/CandidateType/CandidateType.s: source/CandidateType/CandidateType.cpp.s
+.PHONY : source/CandidateType/CandidateType.s
 
 # target to generate assembly for a file
-source/PersonType.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMPR121_FINAL.dir/build.make CMakeFiles/CMPR121_FINAL.dir/source/PersonType.cpp.s
-.PHONY : source/PersonType.cpp.s
+source/CandidateType/CandidateType.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMPR121_FINAL.dir/build.make CMakeFiles/CMPR121_FINAL.dir/source/CandidateType/CandidateType.cpp.s
+.PHONY : source/CandidateType/CandidateType.cpp.s
+
+source/PersonType/PersonType.o: source/PersonType/PersonType.cpp.o
+.PHONY : source/PersonType/PersonType.o
+
+# target to build an object file
+source/PersonType/PersonType.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMPR121_FINAL.dir/build.make CMakeFiles/CMPR121_FINAL.dir/source/PersonType/PersonType.cpp.o
+.PHONY : source/PersonType/PersonType.cpp.o
+
+source/PersonType/PersonType.i: source/PersonType/PersonType.cpp.i
+.PHONY : source/PersonType/PersonType.i
+
+# target to preprocess a source file
+source/PersonType/PersonType.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMPR121_FINAL.dir/build.make CMakeFiles/CMPR121_FINAL.dir/source/PersonType/PersonType.cpp.i
+.PHONY : source/PersonType/PersonType.cpp.i
+
+source/PersonType/PersonType.s: source/PersonType/PersonType.cpp.s
+.PHONY : source/PersonType/PersonType.s
+
+# target to generate assembly for a file
+source/PersonType/PersonType.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMPR121_FINAL.dir/build.make CMakeFiles/CMPR121_FINAL.dir/source/PersonType/PersonType.cpp.s
+.PHONY : source/PersonType/PersonType.cpp.s
 
 source/main.o: source/main.cpp.o
 .PHONY : source/main.o
@@ -186,9 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... CMPR121_FINAL"
-	@echo "... source/PersonType.o"
-	@echo "... source/PersonType.i"
-	@echo "... source/PersonType.s"
+	@echo "... source/CandidateType/CandidateType.o"
+	@echo "... source/CandidateType/CandidateType.i"
+	@echo "... source/CandidateType/CandidateType.s"
+	@echo "... source/PersonType/PersonType.o"
+	@echo "... source/PersonType/PersonType.i"
+	@echo "... source/PersonType/PersonType.s"
 	@echo "... source/main.o"
 	@echo "... source/main.i"
 	@echo "... source/main.s"
