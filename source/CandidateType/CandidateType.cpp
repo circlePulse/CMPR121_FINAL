@@ -52,12 +52,14 @@ void CandidateType::printCandidateInfo() const {
  this->printPersonInfo();
 }
 
-void CandidateType::printCandidateTotalVotes() const {
- std::cout << this->fName << ", " << this->lName << "\n     -> Total Votes (all campuses): " << this->votes << "\n";
+void CandidateType::printCandidateTotalVotes() {
+ std::cout << this->getFirstName() << ", " << this->getLastName() << "\n     -> Total Votes (all campuses): " << this->
+   votes <<
+   "\n";
 }
 
-void CandidateType::printCandidateCampusVotes() const {
- std::cout << this->fName << ", " << this->lName << "\n";
+void CandidateType::printCandidateCampusVotes() {
+ std::cout << this->getFirstName() << ", " << this->getLastName() << "\n";
  for (int i = 0; i < NUM_OF_CAMPUSES; i++) {
   std::cout << "     -> Campus " << (i + 1) << " total votes: " << this->campusVotes[i] << "\n";
  }

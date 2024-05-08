@@ -27,9 +27,9 @@ public:
  // printers
  void printCandidateInfo() const;
 
- void printCandidateTotalVotes() const;
+ void printCandidateTotalVotes();
 
- void printCandidateCampusVotes() const;
+ void printCandidateCampusVotes();
 
  // destructor
  ~CandidateType();
