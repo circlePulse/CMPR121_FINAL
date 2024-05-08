@@ -25,6 +25,15 @@ CandidateType::CandidateType() {
  this->setSSN(0);
 }
 
+CandidateType::CandidateType(std::string fName, std::string lName, int SSN) : PersonType(
+ std::move(fName), std::move(lName),
+ SSN) {
+ for (int i = 0; i < NUM_OF_CAMPUSES; i++) {
+  this->campusVotes[i] = 0;
+ }
+ this->votes = 0;
+}
+
 // settors
 void CandidateType::updateVotesByCampus(const int campus, const int votes) {
  if (campus < 0 || campus >= NUM_OF_CAMPUSES) {

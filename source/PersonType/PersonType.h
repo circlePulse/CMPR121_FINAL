@@ -44,7 +44,7 @@ public:
     // Destructor
     ~PersonType();
 
-protected:
+private:
     std::string fName;
     std::string lName;
     int SSN;

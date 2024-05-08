@@ -7,6 +7,7 @@
 #ifndef CANDIDATETYPE_H
 #define CANDIDATETYPE_H
 #include "../PersonType/PersonType.h"
+#include <string>
 
 constexpr int NUM_OF_CAMPUSES = 4;
 
@@ -15,6 +16,8 @@ class CandidateType : public PersonType {
 public:
  // default constructor
  CandidateType();
+
+ CandidateType(std::string fName, std::string lName, int SSN);
 
  // settors
  void updateVotesByCampus(int campus, int votes);
