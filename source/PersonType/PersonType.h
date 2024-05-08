@@ -22,6 +22,10 @@ public:
     // Settors
     void setPersonInfo(const std::string &fName, const std::string &lName, int SSN);
 
+    void setName(const std::string &fName, const std::string &lName);
+
+    void setSSN(int SSN);
+
     // printers
     void printPersonInfo() const;
 

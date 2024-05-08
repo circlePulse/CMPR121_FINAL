@@ -38,6 +38,15 @@ void PersonType::setPersonInfo(const std::string &fName, const std::string &lNam
     this->SSN = SSN;
 }
 
+void PersonType::setName(const std::string &fName, const std::string &lName) {
+    this->fName = fName;
+    this->lName = lName;
+}
+
+void PersonType::setSSN(int SSN) {
+    this->SSN = SSN;
+}
+
 // printers
 void PersonType::printName() const {
     std::cout << lName << ", " << fName;
