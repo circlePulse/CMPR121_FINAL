@@ -13,75 +13,68 @@
  *
  */
 #include "CandidateType.h"
-
 #include <iostream>
 
-// default constructor -- called if no arguments are passed
 CandidateType::CandidateType() {
- for (int i = 0; i < NUM_OF_CAMPUSES; i++) {
-  this->campusVotes[i] = 0;
- }
- this->votes = 0;
- this->setSSN(0);
+    for (int i = 0; i < NUM_OF_CAMPUSES; i++) {
+        this->campusVotes[i] = 0;
+    }
+    this->votes = 0;
+    this->setSSN(0);
 }
 
 CandidateType::CandidateType(std::string fName, std::string lName, int SSN) : PersonType(
- std::move(fName), std::move(lName),
- SSN) {
- for (int i = 0; i < NUM_OF_CAMPUSES; i++) {
-  this->campusVotes[i] = 0;
- }
- this->votes = 0;
+    std::move(fName), std::move(lName),
+    SSN) {
+    for (int i = 0; i < NUM_OF_CAMPUSES; i++) {
+        this->campusVotes[i] = 0;
+    }
+    this->votes = 0;
 }
 
-// settors
 void CandidateType::updateVotesByCampus(const int campus, const int votes) {
- if (campus < 0 || campus >= NUM_OF_CAMPUSES) {
-  throw std::out_of_range("Invalid Campus");
- }
- this->campusVotes[campus] = votes;
- this->p_updateVotes();
+    if (campus < 0 || campus >= NUM_OF_CAMPUSES) {
+        throw std::out_of_range("Invalid Campus");
+    }
+    this->campusVotes[campus] = votes;
+    this->p_updateVotes();
 }
-
-// gettors
 
 int CandidateType::getTotalVotes() const {
- return this->votes;
+    return this->votes;
 }
 
 int CandidateType::getVotesByCampus(const int campus) const {
- if (campus < 0 || campus >= NUM_OF_CAMPUSES) {
-  throw std::out_of_range("Invalid Campus");
- }
-
- return this->campusVotes[campus];
+    if (campus < 0 || campus >= NUM_OF_CAMPUSES) {
+        throw std::out_of_range("Invalid Campus");
+    }
+    return this->campusVotes[campus];
 }
 
 void CandidateType::printCandidateInfo() const {
- this->printPersonInfo();
+    this->printPersonInfo();
 }
 
 void CandidateType::printCandidateTotalVotes() {
- std::cout << this->getFirstName() << ", " << this->getLastName() << "\n     -> Total Votes (all campuses): " << this->
-   votes <<
-   "\n";
+    std::cout << this->getFirstName() << ", " << this->getLastName() << "\n     -> Total Votes (all campuses): " << this
+            ->
+            votes <<
+            "\n";
 }
 
 void CandidateType::printCandidateCampusVotes() {
- std::cout << this->getFirstName() << ", " << this->getLastName() << "\n";
- for (int i = 0; i < NUM_OF_CAMPUSES; i++) {
-  std::cout << "     -> Campus " << (i + 1) << " total votes: " << this->campusVotes[i] << "\n";
- }
+    std::cout << this->getFirstName() << ", " << this->getLastName() << "\n";
+    for (int i = 0; i < NUM_OF_CAMPUSES; i++) {
+        std::cout << "     -> Campus " << (i + 1) << " total votes: " << this->campusVotes[i] << "\n";
+    }
 }
 
-// private function to update votes
 void CandidateType::p_updateVotes() {
- this->votes = 0;
+    this->votes = 0;
 
- for (int i: campusVotes) {
-  this->votes += i;
- }
+    for (int i: campusVotes) {
+        this->votes += i;
+    }
 }
 
-// Destructor
 CandidateType::~CandidateType() = default;
