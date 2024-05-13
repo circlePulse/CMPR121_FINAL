@@ -23,7 +23,7 @@ CandidateType::CandidateType() {
     this->setSSN(0);
 }
 
-CandidateType::CandidateType(std::string fName, std::string lName, int SSN) : PersonType(
+CandidateType::CandidateType(std::string fName, std::string lName, const int SSN) : PersonType(
     std::move(fName), std::move(lName),
     SSN) {
     for (int i = 0; i < NUM_OF_CAMPUSES; i++) {
