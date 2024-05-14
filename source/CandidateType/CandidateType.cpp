@@ -72,7 +72,7 @@ void CandidateType::printCandidateCampusVotes() {
 void CandidateType::p_updateVotes() {
     this->votes = 0;
 
-    for (int i: campusVotes) {
+    for (const int i: campusVotes) {
         this->votes += i;
     }
 }

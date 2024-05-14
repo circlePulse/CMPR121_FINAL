@@ -36,6 +36,8 @@ int main() {
     candidateType1.setPersonInfo("John", "Doe", 111223333);
     candidateType1.updateVotesByCampus(0, 25);
     candidateType1.updateVotesByCampus(1, 15);
+    candidateType1.updateVotesByCampus(2, 30);
+    candidateType1.updateVotesByCampus(3, 10);
 
     candidateType1.printCandidateInfo();
     candidateType1.printCandidateTotalVotes();
