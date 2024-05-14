@@ -16,8 +16,8 @@
 #include <iostream>
 
 CandidateType::CandidateType() {
-    for (int i = 0; i < NUM_OF_CAMPUSES; i++) {
-        this->campusVotes[i] = 0;
+    for (int &campusVote: this->campusVotes) {
+        campusVote = 0;
     }
     this->votes = 0;
     this->setSSN(0);
@@ -26,8 +26,8 @@ CandidateType::CandidateType() {
 CandidateType::CandidateType(std::string fName, std::string lName, const int SSN) : PersonType(
     std::move(fName), std::move(lName),
     SSN) {
-    for (int i = 0; i < NUM_OF_CAMPUSES; i++) {
-        this->campusVotes[i] = 0;
+    for (int &campusVote: this->campusVotes) {
+        campusVote = 0;
     }
     this->votes = 0;
 }
