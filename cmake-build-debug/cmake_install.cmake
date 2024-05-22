@@ -1,4 +1,4 @@
-# Install script for directory: /Users/omarhboubati/Library/CloudStorage/GoogleDrive-omarhbo23@gmail.com/My Drive/Academics/Community College/Santa Ana Community College/CMPR-121-37589/CMPR121_FINAL
+# Install script for directory: /Users/ibrahimmemon/Documents/GitHub/CMPR121_Final
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/omarhboubati/Library/CloudStorage/GoogleDrive-omarhbo23@gmail.com/My Drive/Academics/Community College/Santa Ana Community College/CMPR-121-37589/CMPR121_FINAL/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/ibrahimmemon/Documents/GitHub/CMPR121_Final/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
