@@ -44,5 +44,9 @@ int main() {
 
     candidateType1.printCandidateCampusVotes();
 
+    cout << "Testing out of range" << endl;
+    cout << candidateType1.getVotesByCampus(6) << endl;
+
+
     return 0;
 }
