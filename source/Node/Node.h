@@ -1,3 +1,5 @@
+#include "../CandidateType/CandidateType.h"
+
 
 class Node
 {
