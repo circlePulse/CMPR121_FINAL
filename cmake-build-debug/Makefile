@@ -129,6 +129,30 @@ CMPR121_FINAL/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMPR121_FINAL.dir/build.make CMakeFiles/CMPR121_FINAL.dir/build
 .PHONY : CMPR121_FINAL/fast
 
+source/CandidateList/CandidateList.o: source/CandidateList/CandidateList.cpp.o
+.PHONY : source/CandidateList/CandidateList.o
+
+# target to build an object file
+source/CandidateList/CandidateList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMPR121_FINAL.dir/build.make CMakeFiles/CMPR121_FINAL.dir/source/CandidateList/CandidateList.cpp.o
+.PHONY : source/CandidateList/CandidateList.cpp.o
+
+source/CandidateList/CandidateList.i: source/CandidateList/CandidateList.cpp.i
+.PHONY : source/CandidateList/CandidateList.i
+
+# target to preprocess a source file
+source/CandidateList/CandidateList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMPR121_FINAL.dir/build.make CMakeFiles/CMPR121_FINAL.dir/source/CandidateList/CandidateList.cpp.i
+.PHONY : source/CandidateList/CandidateList.cpp.i
+
+source/CandidateList/CandidateList.s: source/CandidateList/CandidateList.cpp.s
+.PHONY : source/CandidateList/CandidateList.s
+
+# target to generate assembly for a file
+source/CandidateList/CandidateList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMPR121_FINAL.dir/build.make CMakeFiles/CMPR121_FINAL.dir/source/CandidateList/CandidateList.cpp.s
+.PHONY : source/CandidateList/CandidateList.cpp.s
+
 source/CandidateType/CandidateType.o: source/CandidateType/CandidateType.cpp.o
 .PHONY : source/CandidateType/CandidateType.o
 
@@ -210,6 +234,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... CMPR121_FINAL"
+	@echo "... source/CandidateList/CandidateList.o"
+	@echo "... source/CandidateList/CandidateList.i"
+	@echo "... source/CandidateList/CandidateList.s"
 	@echo "... source/CandidateType/CandidateType.o"
 	@echo "... source/CandidateType/CandidateType.i"
 	@echo "... source/CandidateType/CandidateType.s"

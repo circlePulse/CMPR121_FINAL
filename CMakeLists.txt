@@ -8,4 +8,5 @@ add_executable(CMPR121_FINAL source/main.cpp
         source/PersonType/PersonType.cpp
         source/CandidateType/CandidateType.cpp
         source/CandidateType/CandidateType.h
+        source/CandidateList/CandidateList.cpp
 )
