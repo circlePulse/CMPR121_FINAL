@@ -1,5 +1,6 @@
 #include "CandidateList.h"
 #include <iostream>
+#include <iomanip>
 
 // Default constructor
 CandidateList::CandidateList() : first(nullptr), last(nullptr), count(0) {}
@@ -103,7 +104,7 @@ void CandidateList::printCandidateCampusVotes(int ssn, int campus) const {
     Node* current = first;
     while (current != nullptr) {
         if (current->getCandidate().getSSN() == ssn) {
-            current->getCandidate().getVotesByCampus(campus - 1);
+            std::cout << " " << current->getCandidate().getVotesByCampus(campus);
             return;
         }
         current = current->getLink();
@@ -122,7 +123,7 @@ void CandidateList::printCandidateTotalVotes(int ssn) const {
     Node* current = first;
     while (current != nullptr) {
         if (current->getCandidate().getSSN() == ssn) {
-            current->getCandidate().getTotalVotes();
+            std::cout << current->getCandidate().getTotalVotes();
             return;
         }
         current = current->getLink();
@@ -138,11 +139,14 @@ void CandidateList::printFinalResults() const {
         return;
     }
 
+    // TODO fix the print columns
     Node* current = first;
+    std::cout << std::left << std::setw(20) << "Candidate Name" << std::setw(15) << "Total Votes" << std::endl;
+    std::cout << "--------------------------------------------------" << std::endl;
     while (current != nullptr) {
-        std::cout << "Candidate Name: ";
-        current->getCandidate().printName();
-        std::cout << " Total Votes: " << current->getCandidate().getTotalVotes() << std::endl;
+        std::cout << std::left << std::setw(20);
+        current->getCandidate().printName(); // Ensure this does not print a newline
+        std::cout << std::setw(15) << current->getCandidate().getTotalVotes() << std::endl; // Print a newline here
         current = current->getLink();
     }
 }

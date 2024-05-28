@@ -77,7 +77,7 @@ void processChoice(CandidateList& candidateList)
                 {
                     candidateList.printCandidateName(ssn);
                     //cout << endl;
-                    for (int i = 1; i <= NUM_OF_CAMPUSES; ++i)
+                    for (int i = 0; i < NUM_OF_CAMPUSES; ++i)
                         candidateList.printCandidateCampusVotes(ssn, i);
                 }
                 cout << endl;
@@ -91,7 +91,7 @@ void processChoice(CandidateList& candidateList)
                 if (candidateList.searchCandidate(ssn))
                 {
                     candidateList.printCandidateName(ssn);
-                    //cout << endl;
+                    cout << "\t Total votes: ";
                     candidateList.printCandidateTotalVotes(ssn);
                 }
                 cout << endl << endl;
@@ -104,7 +104,7 @@ void processChoice(CandidateList& candidateList)
                 {
                     cout << "\nElection winner: ";
                     candidateList.printCandidateName(ssn);
-                    //cout << endl;
+                    cout << "\t Total votes: ";
                     candidateList.printCandidateTotalVotes(ssn);
                 }
                 else
