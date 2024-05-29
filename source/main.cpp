@@ -133,7 +133,13 @@ void processChoice(CandidateList &candidateList) {
         cout << endl;
         displayMenu();
         cout << "\nEnter your choice: ";
-        cin >> choice;
+            while (!(cin >> choice)) {
+                cout << "Invalid input. Please enter a number." << endl;
+                cin.clear();
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                cout << "\nEnter your choice: ";
+                cin >> choice;
+        }
     }
     if (choice == 6)
         cout << "\nThank you and have a great day!" << endl;
