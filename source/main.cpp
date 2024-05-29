@@ -14,10 +14,10 @@
 using namespace std;
 
 void displayMenu();
-void processChoice(CandidateList& candidateList);
 
-int main()
-{
+void processChoice(CandidateList &candidateList);
+
+int main() {
     //Create the list
     CandidateList candidateList;
 
@@ -30,12 +30,11 @@ int main()
     //Process the choice
     processChoice(candidateList);
 
-    cout  <<  endl;
+    cout << endl;
     return 0;
 }
 
-void displayMenu()
-{
+void displayMenu() {
     cout << "\n*** MAIN MENU ***\n";
     cout << "\nSelect one of the following:\n\n";
     cout << "    1: Print all candidates" << endl;
@@ -46,20 +45,23 @@ void displayMenu()
     cout << "    6: To exit" << endl;
 }
 
-void processChoice(CandidateList& candidateList)
-{
+void processChoice(CandidateList &candidateList) {
     int choice;
     cout << "\nEnter your choice: ";
+    if (!(cin >> choice)) {
+        cout << "Invalid input. Please enter a number." << endl;
+        cin.clear();
+        cin.ignore(10000, '\n');
+        main();
+    }
     cin >> choice;
 
-    while (choice != 6)
-    {
+    while (choice != 6) {
         string fName, lName;
         int campus = 0,
                 ssn = 0;
 
-        switch (choice)
-        {
+        switch (choice) {
             // Print all candidates
             case 1:
                 cout << endl;
@@ -68,13 +70,12 @@ void processChoice(CandidateList& candidateList)
                 cout << endl;
                 break;
 
-                // Print a candidates's campus votes
+            // Print a candidates's campus votes
             case 2:
                 cout << "\nEnter candidate's social security number (no dashes): ";
                 cin >> ssn;
                 cout << endl;
-                if (candidateList.searchCandidate(ssn))
-                {
+                if (candidateList.searchCandidate(ssn)) {
                     candidateList.printCandidateName(ssn);
                     //cout << endl;
                     for (int i = 0; i < NUM_OF_CAMPUSES; ++i)
@@ -83,13 +84,12 @@ void processChoice(CandidateList& candidateList)
                 cout << endl;
                 break;
 
-                // Print a candidate's total votes
+            // Print a candidate's total votes
             case 3:
                 cout << "\nEnter candidate's social security number (no dashes): ";
                 cin >> ssn;
                 cout << endl;
-                if (candidateList.searchCandidate(ssn))
-                {
+                if (candidateList.searchCandidate(ssn)) {
                     candidateList.printCandidateName(ssn);
                     cout << "\t Total votes: ";
                     candidateList.printCandidateTotalVotes(ssn);
@@ -97,19 +97,16 @@ void processChoice(CandidateList& candidateList)
                 cout << endl << endl;
                 break;
 
-                // Print winner
+            // Print winner
             case 4:
                 ssn = candidateList.getWinner();
-                if (ssn != 0)
-                {
+                if (ssn != 0) {
                     cout << "\nElection winner: ";
                     candidateList.printCandidateName(ssn);
                     cout << "\t Total votes: ";
                     candidateList.printCandidateTotalVotes(ssn);
-                }
-                else
-                {
-                    cout << "\n    => There are no candidates." ;
+                } else {
+                    cout << "\n    => There are no candidates.";
                 }
                 cout << endl << endl;
                 break;
@@ -123,7 +120,7 @@ void processChoice(CandidateList& candidateList)
                 break;
 
             default:
-                cout << "\n    => Sorry. That is not a selection. \n" ;
+                cout << "\n    => Sorry. That is not a selection. \n";
                 cout << endl;
         }
         cout << endl;

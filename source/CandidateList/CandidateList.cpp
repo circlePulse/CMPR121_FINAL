@@ -3,7 +3,8 @@
 #include <iomanip>
 
 // Default constructor
-CandidateList::CandidateList() : first(nullptr), last(nullptr), count(0) {}
+CandidateList::CandidateList() : first(nullptr), last(nullptr), count(0) {
+}
 
 // Destructor
 CandidateList::~CandidateList() {
@@ -11,8 +12,8 @@ CandidateList::~CandidateList() {
 }
 
 // Add a candidate to the list
-void CandidateList::addCandidate(const CandidateType& candidate) {
-    Node* newNode = new Node(candidate, nullptr);
+void CandidateList::addCandidate(const CandidateType &candidate) {
+    Node *newNode = new Node(candidate, nullptr);
     if (first == nullptr) {
         first = last = newNode;
     } else {
@@ -29,8 +30,8 @@ int CandidateList::getWinner() const {
         return 0;
     }
 
-    Node* current = first;
-    Node* winner = first;
+    Node *current = first;
+    Node *winner = first;
 
     while (current != nullptr) {
         if (current->getCandidate().getTotalVotes() > winner->getCandidate().getTotalVotes()) {
@@ -49,7 +50,7 @@ bool CandidateList::searchCandidate(int ssn) const {
         return false;
     }
 
-    Node* current = first;
+    Node *current = first;
     while (current != nullptr) {
         if (current->getCandidate().getSSN() == ssn) {
             return true;
@@ -68,7 +69,7 @@ void CandidateList::printCandidateName(int ssn) const {
         return;
     }
 
-    Node* current = first;
+    Node *current = first;
     while (current != nullptr) {
         if (current->getCandidate().getSSN() == ssn) {
             current->getCandidate().printName();
@@ -87,7 +88,7 @@ void CandidateList::printAllCandidates() const {
         return;
     }
 
-    Node* current = first;
+    Node *current = first;
     while (current != nullptr) {
         current->getCandidate().printCandidateInfo();
         current = current->getLink();
@@ -101,7 +102,7 @@ void CandidateList::printCandidateCampusVotes(int ssn, int campus) const {
         return;
     }
 
-    Node* current = first;
+    Node *current = first;
     while (current != nullptr) {
         if (current->getCandidate().getSSN() == ssn) {
             std::cout << " " << current->getCandidate().getVotesByCampus(campus);
@@ -120,7 +121,7 @@ void CandidateList::printCandidateTotalVotes(int ssn) const {
         return;
     }
 
-    Node* current = first;
+    Node *current = first;
     while (current != nullptr) {
         if (current->getCandidate().getSSN() == ssn) {
             std::cout << current->getCandidate().getTotalVotes();
@@ -139,8 +140,8 @@ void CandidateList::printFinalResults() const {
         return;
     }
 
-    // TODO fix the print columns
-    Node* current = first;
+    // TODO: fix the print columns
+    Node *current = first;
     std::cout << std::left << std::setw(20) << "Candidate Name" << std::setw(15) << "Total Votes" << std::endl;
     std::cout << "--------------------------------------------------" << std::endl;
     while (current != nullptr) {
@@ -153,7 +154,7 @@ void CandidateList::printFinalResults() const {
 
 // Delete all nodes in the list and reset member variables
 void CandidateList::destroyList() {
-    Node* temp;
+    Node *temp;
 
     while (first != nullptr) {
         temp = first;
