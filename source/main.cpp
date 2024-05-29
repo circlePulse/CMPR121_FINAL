@@ -48,7 +48,7 @@ void displayMenu() {
 void processChoice(CandidateList &candidateList) {
     int choice;
     cout << "\nEnter your choice: ";
-    if (!(cin >> choice)) {
+    if (!(cin >> choice)) { // TODO: Add input validation - Inputting "1.1" will break it.
         cout << "Invalid input. Please enter a number." << endl;
         cin.clear();
         cin.ignore(10000, '\n');

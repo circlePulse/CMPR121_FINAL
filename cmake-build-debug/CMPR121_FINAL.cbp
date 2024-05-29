@@ -82,6 +82,12 @@
 		<Unit filename="/Users/ibrahimmemon/Documents/GitHub/CMPR121_Final/source/CandidateList/CandidateList.h">
 			<Option target="CMPR121_FINAL"/>
 		</Unit>
+		<Unit filename="/Users/ibrahimmemon/Documents/GitHub/CMPR121_Final/source/CandidateLoader/CandidateLoader.cpp">
+			<Option target="CMPR121_FINAL"/>
+		</Unit>
+		<Unit filename="/Users/ibrahimmemon/Documents/GitHub/CMPR121_Final/source/CandidateLoader/CandidateLoader.h">
+			<Option target="CMPR121_FINAL"/>
+		</Unit>
 		<Unit filename="/Users/ibrahimmemon/Documents/GitHub/CMPR121_Final/source/CandidateType/CandidateType.cpp">
 			<Option target="CMPR121_FINAL"/>
 		</Unit>

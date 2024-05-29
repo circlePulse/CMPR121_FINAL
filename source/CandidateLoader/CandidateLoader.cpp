@@ -1,5 +1,5 @@
 #include "../CandidateList/CandidateList.h"
-#include "CandidateLoader.h" // TODO might need to remove
+#include "CandidateLoader.h"
 #include <fstream>
 #include <sstream>
 #include <iostream>
