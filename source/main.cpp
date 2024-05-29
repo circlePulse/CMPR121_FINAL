@@ -49,6 +49,7 @@ void processChoice(CandidateList &candidateList) {
     int choice;
     cout << "\nEnter your choice: ";
     cin >> choice;
+
     if (cin.fail()) {
         cout << "Invalid input. Please enter a number." << endl;
         cin.clear();
