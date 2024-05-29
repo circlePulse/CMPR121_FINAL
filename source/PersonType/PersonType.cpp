@@ -52,6 +52,10 @@ void PersonType::printName() const {
     std::cout << lName << ", " << fName;
 }
 
+std::string PersonType::getFormattedName() const {
+    return lName + ", " + fName;
+}
+
 void PersonType::printSSN() const {
     const std::string stringSSN = std::to_string(SSN);
     std::cout << stringSSN.substr(0, 3) << "-" << stringSSN.substr(3, 2) << "-" << stringSSN.substr(5, 4);

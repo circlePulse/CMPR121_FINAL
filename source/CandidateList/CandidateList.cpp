@@ -140,14 +140,15 @@ void CandidateList::printFinalResults() const {
         return;
     }
 
-    // TODO: fix the print columns
     Node *current = first;
-    std::cout << std::left << std::setw(20) << "Candidate Name" << std::setw(15) << "Total Votes" << std::endl;
+    std::cout << std::left << std::setw(20) << "Candidate Name" << std::setw(20) << "Total Votes" << std::endl;
     std::cout << "--------------------------------------------------" << std::endl;
     while (current != nullptr) {
-        std::cout << std::left << std::setw(20);
-        current->getCandidate().printName(); // Ensure this does not print a newline
-        std::cout << std::setw(15) << current->getCandidate().getTotalVotes() << std::endl; // Print a newline here
+        //std::cout << std::left << std::setw(20);
+        //current->getCandidate().printName(); // Ensure this does not print a newline
+        std::cout << std::left << std::setw(25) << current->getCandidate().getFormattedName() << std::setw(15) <<
+                current->getCandidate().getTotalVotes() << std::endl;
+        // std::cout << std::setw(15) << current->getCandidate().getTotalVotes() << std::endl; // Print a newline here
         current = current->getLink();
     }
 }

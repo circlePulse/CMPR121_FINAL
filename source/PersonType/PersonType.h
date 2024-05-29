@@ -31,6 +31,8 @@ public:
 
     void printName() const;
 
+    std::string getFormattedName() const;
+
     void printSSN() const;
 
     // Gettors
