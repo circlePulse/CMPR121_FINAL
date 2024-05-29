@@ -47,14 +47,20 @@ void displayMenu() {
 
 void processChoice(CandidateList &candidateList) {
     int choice;
-    cout << "\nEnter your choice: ";
-    cin >> choice;
+    bool validInput = false;
 
-    if (cin.fail()) {
-        cout << "Invalid input. Please enter a number." << endl;
-        cin.clear();
-        cin.ignore(10000, '\n');
-        main();
+    while (!validInput) {
+        cout << "\nEnter your choice: ";
+        cin >> choice;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // discard the rest of the line
+
+        if (cin.fail()) {
+            cout << "Invalid input. Please enter a number." << endl;
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        } else {
+            validInput = true;
+        }
     }
 
     while (choice != 6) {
