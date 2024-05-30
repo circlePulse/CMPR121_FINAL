@@ -47,19 +47,27 @@ void displayMenu() {
 
 void processChoice(CandidateList &candidateList) {
     int choice;
+    string unFormattedChoice;
     bool validInput = false;
+    bool isInputValid = false;
 
-    while (!validInput) {
+    isInputValid = false;
+    while (!isInputValid) {
         cout << "\nEnter your choice: ";
-        cin >> choice;
-        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // discard the rest of the line
-
-        if (cin.fail()) {
-            cout << "Invalid input. Please enter a number." << endl;
-            cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        cin >> unFormattedChoice;
+        if (unFormattedChoice.length() == 1) {
+            if (isdigit(unFormattedChoice[0])) {
+                choice = stoi(unFormattedChoice);
+                if (choice >= 1 && choice <= 6) {
+                    isInputValid = true;
+                } else {
+                    cout << "Invalid input. Please enter a number between 1 and 6." << endl;
+                }
+            } else {
+                cout << "Invalid input. Please enter a number." << endl;
+            }
         } else {
-            validInput = true;
+            cout << "Invalid input. Please enter a single digit." << endl;
         }
     }
 
@@ -132,13 +140,24 @@ void processChoice(CandidateList &candidateList) {
         }
         cout << endl;
         displayMenu();
-        cout << "\nEnter your choice: ";
-            while (!(cin >> choice)) {
-                cout << "Invalid input. Please enter a number." << endl;
-                cin.clear();
-                cin.ignore(numeric_limits<streamsize>::max(), '\n');
-                cout << "\nEnter your choice: ";
-                cin >> choice;
+        isInputValid = false;
+        while (!isInputValid) {
+            cout << "\nEnter your choice: ";
+            cin >> unFormattedChoice;
+            if (unFormattedChoice.length() == 1) {
+                if (isdigit(unFormattedChoice[0])) {
+                    choice = stoi(unFormattedChoice);
+                    if (choice >= 1 && choice <= 6) {
+                        isInputValid = true;
+                    } else {
+                        cout << "Invalid input. Please enter a number between 1 and 6." << endl;
+                    }
+                } else {
+                    cout << "Invalid input. Please enter a number." << endl;
+                }
+            } else {
+                cout << "Invalid input. Please enter a single digit." << endl;
+            }
         }
     }
     if (choice == 6)
