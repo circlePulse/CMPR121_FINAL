@@ -81,4 +81,3 @@ int PersonType::getSSN() const {
 
 // Destructor -- called when object is destroyed
 PersonType::~PersonType() = default;
-

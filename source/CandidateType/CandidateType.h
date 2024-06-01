@@ -14,34 +14,34 @@ constexpr int NUM_OF_CAMPUSES = 4;
 
 class CandidateType : public PersonType {
 public:
- // default constructor
- CandidateType();
+    // default constructor
+    CandidateType();
 
- CandidateType(const std::string &fName, const std::string &lName, int SSN);
+    CandidateType(const std::string &fName, const std::string &lName, int SSN);
 
- // settors
- void updateVotesByCampus(int campus, int votes);
+    // settors
+    void updateVotesByCampus(int campus, int votes);
 
- // gettors
- [[nodiscard]] int getTotalVotes() const;
+    // gettors
+    [[nodiscard]] int getTotalVotes() const;
 
- [[nodiscard]] int getVotesByCampus(int campus) const;
+    [[nodiscard]] int getVotesByCampus(int campus) const;
 
- // printers
- void printCandidateInfo() const;
+    // printers
+    void printCandidateInfo() const;
 
- void printCandidateTotalVotes();
+    void printCandidateTotalVotes();
 
- void printCandidateCampusVotes();
+    void printCandidateCampusVotes();
 
- // destructor
- ~CandidateType();
+    // destructor
+    ~CandidateType();
 
 private:
- int campusVotes[NUM_OF_CAMPUSES]{};
- int votes;
+    int campusVotes[NUM_OF_CAMPUSES]{};
+    int votes;
 
- void p_updateVotes();
+    void p_updateVotes();
 };
 
 

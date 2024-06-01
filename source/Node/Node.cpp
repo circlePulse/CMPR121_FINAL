@@ -5,7 +5,7 @@
 #include "Node.h"
 
 Node *Node::getLink() const {
-     return link;
+    return link;
 }
 
 CandidateType Node::getCandidate() const { return candidate; }
