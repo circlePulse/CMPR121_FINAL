@@ -4,6 +4,7 @@
  */
 
 // making sure the header file is included only once
+#pragma once
 #ifndef PERSONTYPE_H
 #define PERSONTYPE_H
 

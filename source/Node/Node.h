@@ -1,3 +1,7 @@
+#pragma once
+#ifndef NODE_H
+#define NODE_H
+
 #include "../CandidateType/CandidateType.h"
 
 
@@ -10,10 +14,13 @@ public:
         : candidate(votes), link(theLink) {
     }
 
-    [[nodiscard]] Node *getLink() const { return link; }
-    [[nodiscard]] CandidateType getCandidate() const { return candidate; }
-    void setCandidate(const CandidateType &votes) { candidate = votes; }
-    void setLink(Node *theLink) { link = theLink; }
+    [[nodiscard]] Node *getLink() const;
+
+    [[nodiscard]] CandidateType getCandidate() const;
+
+    void setCandidate(const CandidateType &votes);
+
+    void setLink(Node *theLink);
 
     ~Node() = default;
 
@@ -22,3 +29,5 @@ private:
     Node *link; //pointer that points to next node
 };
 
+
+#endif
