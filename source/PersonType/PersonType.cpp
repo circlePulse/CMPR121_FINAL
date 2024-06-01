@@ -14,7 +14,6 @@
 #include <iostream>
 // importing string library
 #include <string>
-#include <utility>
 
 
 // default constructor -- called if no arguments are passed
@@ -24,7 +23,7 @@ PersonType::PersonType() {
 
 // overloaded constructor -- called if arguments are passed
 // accepts 3 arguments: fName, lName, SSN
-PersonType::PersonType(std::string fName, std::string lName, const int SSN) {
+PersonType::PersonType(const std::string &fName, const std::string &lName, const int SSN) {
     this->fName = fName;
     this->lName = lName;
     this->SSN = SSN;
@@ -43,7 +42,7 @@ void PersonType::setName(const std::string &fName, const std::string &lName) {
     this->lName = lName;
 }
 
-void PersonType::setSSN(int SSN) {
+void PersonType::setSSN(int const SSN) {
     this->SSN = SSN;
 }
 

@@ -9,8 +9,8 @@ public:
     CandidateList();
     ~CandidateList();
     void addCandidate(const CandidateType& candidate);
-    int getWinner() const;
-    bool searchCandidate(int ssn) const;
+    [[nodiscard]] int getWinner() const;
+    [[nodiscard]] bool searchCandidate(int ssn) const;
     void printCandidateName(int ssn) const;
     void printAllCandidates() const;
     void printCandidateCampusVotes(int ssn, int campus) const;

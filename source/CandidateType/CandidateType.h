@@ -17,7 +17,7 @@ public:
  // default constructor
  CandidateType();
 
- CandidateType(std::string fName, std::string lName, int SSN);
+ CandidateType(const std::string &fName, const std::string &lName, int SSN);
 
  // settors
  void updateVotesByCampus(int campus, int votes);

@@ -5,7 +5,7 @@
 #include <iostream>
 
 // Function to load candidates from file
-void loadCandidatesFromFile(CandidateList& candidateList, const std::string& filename) {
+void loadCandidatesFromFile(CandidateList &candidateList, const std::string &filename) {
     std::ifstream infile(filename);
     if (!infile) {
         std::cerr << "Unable to open file: " << filename << std::endl;
@@ -28,7 +28,7 @@ void loadCandidatesFromFile(CandidateList& candidateList, const std::string& fil
     }
 }
 
-void initializeCandidates(CandidateList& candidateList) {
-    std::string filename = "../../Resources/Candidate_data.txt";
+void initializeCandidates(CandidateList &candidateList) {
+    std::string const filename = "../../Resources/Candidate_data.txt";
     loadCandidatesFromFile(candidateList, filename);
 }

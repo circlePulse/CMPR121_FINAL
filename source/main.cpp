@@ -45,13 +45,11 @@ void displayMenu() {
     cout << "    6: To exit" << endl;
 }
 
-void processChoice(CandidateList &candidateList) {
-    int choice;
+void processChoice(CandidateList /*const*/ &candidateList) {
+    int choice = 0;
     string unFormattedChoice;
-    bool validInput = false;
     bool isInputValid = false;
 
-    isInputValid = false;
     while (!isInputValid) {
         cout << "\nEnter your choice: ";
         cin >> unFormattedChoice;
@@ -73,8 +71,7 @@ void processChoice(CandidateList &candidateList) {
 
     while (choice != 6) {
         string fName, lName;
-        int campus = 0,
-                ssn = 0;
+        int ssn = 0;
 
         switch (choice) {
             // Print all candidates
