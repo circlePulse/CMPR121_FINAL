@@ -8,7 +8,7 @@
 #include "../CandidateList/CandidateList.h"
 
 
-void createCandidateList(std::ifstream &infile, CandidateList &candidateList) {
+inline void createCandidateList(std::ifstream &infile, CandidateList &candidateList) {
 	int ssn = 0;
 	int allVotes[NUM_OF_CAMPUSES];
 	std::string fName, lName;
@@ -34,7 +34,7 @@ void createCandidateList(std::ifstream &infile, CandidateList &candidateList) {
 	}
 }
 
-void readCandidateData(CandidateList &candidateList) {
+inline void readCandidateData(CandidateList &candidateList) {
 	std::ifstream infile;
 
 	// Adjust the file path here
