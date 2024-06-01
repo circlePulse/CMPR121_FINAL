@@ -51,33 +51,45 @@ build cmake_object_order_depends_target_CMPR121_FINAL: phony || CMakeFiles/CMPR1
 
 build CMakeFiles/CMPR121_FINAL.dir/source/main.cpp.o: CXX_COMPILER__CMPR121_FINAL_unscanned_Debug /Users/omarhboubati/Library/CloudStorage/GoogleDrive-omarhbo23@gmail.com/My$ Drive/Academics/Community$ College/Santa$ Ana$ Community$ College/CMPR-121-37589/CMPR121_FINAL/source/main.cpp || cmake_object_order_depends_target_CMPR121_FINAL
   DEP_FILE = CMakeFiles/CMPR121_FINAL.dir/source/main.cpp.o.d
-  FLAGS = -g -std=gnu++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.4 -fcolor-diagnostics
+  FLAGS = -g -std=gnu++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/CMPR121_FINAL.dir
   OBJECT_FILE_DIR = CMakeFiles/CMPR121_FINAL.dir/source
 
 build CMakeFiles/CMPR121_FINAL.dir/source/PersonType/PersonType.cpp.o: CXX_COMPILER__CMPR121_FINAL_unscanned_Debug /Users/omarhboubati/Library/CloudStorage/GoogleDrive-omarhbo23@gmail.com/My$ Drive/Academics/Community$ College/Santa$ Ana$ Community$ College/CMPR-121-37589/CMPR121_FINAL/source/PersonType/PersonType.cpp || cmake_object_order_depends_target_CMPR121_FINAL
   DEP_FILE = CMakeFiles/CMPR121_FINAL.dir/source/PersonType/PersonType.cpp.o.d
-  FLAGS = -g -std=gnu++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.4 -fcolor-diagnostics
+  FLAGS = -g -std=gnu++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/CMPR121_FINAL.dir
   OBJECT_FILE_DIR = CMakeFiles/CMPR121_FINAL.dir/source/PersonType
 
 build CMakeFiles/CMPR121_FINAL.dir/source/CandidateType/CandidateType.cpp.o: CXX_COMPILER__CMPR121_FINAL_unscanned_Debug /Users/omarhboubati/Library/CloudStorage/GoogleDrive-omarhbo23@gmail.com/My$ Drive/Academics/Community$ College/Santa$ Ana$ Community$ College/CMPR-121-37589/CMPR121_FINAL/source/CandidateType/CandidateType.cpp || cmake_object_order_depends_target_CMPR121_FINAL
   DEP_FILE = CMakeFiles/CMPR121_FINAL.dir/source/CandidateType/CandidateType.cpp.o.d
-  FLAGS = -g -std=gnu++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.4 -fcolor-diagnostics
+  FLAGS = -g -std=gnu++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/CMPR121_FINAL.dir
   OBJECT_FILE_DIR = CMakeFiles/CMPR121_FINAL.dir/source/CandidateType
 
 build CMakeFiles/CMPR121_FINAL.dir/source/CandidateList/CandidateList.cpp.o: CXX_COMPILER__CMPR121_FINAL_unscanned_Debug /Users/omarhboubati/Library/CloudStorage/GoogleDrive-omarhbo23@gmail.com/My$ Drive/Academics/Community$ College/Santa$ Ana$ Community$ College/CMPR-121-37589/CMPR121_FINAL/source/CandidateList/CandidateList.cpp || cmake_object_order_depends_target_CMPR121_FINAL
   DEP_FILE = CMakeFiles/CMPR121_FINAL.dir/source/CandidateList/CandidateList.cpp.o.d
-  FLAGS = -g -std=gnu++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.4 -fcolor-diagnostics
+  FLAGS = -g -std=gnu++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/CMPR121_FINAL.dir
   OBJECT_FILE_DIR = CMakeFiles/CMPR121_FINAL.dir/source/CandidateList
 
 build CMakeFiles/CMPR121_FINAL.dir/source/CandidateLoader/CandidateLoader.cpp.o: CXX_COMPILER__CMPR121_FINAL_unscanned_Debug /Users/omarhboubati/Library/CloudStorage/GoogleDrive-omarhbo23@gmail.com/My$ Drive/Academics/Community$ College/Santa$ Ana$ Community$ College/CMPR-121-37589/CMPR121_FINAL/source/CandidateLoader/CandidateLoader.cpp || cmake_object_order_depends_target_CMPR121_FINAL
   DEP_FILE = CMakeFiles/CMPR121_FINAL.dir/source/CandidateLoader/CandidateLoader.cpp.o.d
-  FLAGS = -g -std=gnu++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.4 -fcolor-diagnostics
+  FLAGS = -g -std=gnu++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/CMPR121_FINAL.dir
   OBJECT_FILE_DIR = CMakeFiles/CMPR121_FINAL.dir/source/CandidateLoader
+
+build CMakeFiles/CMPR121_FINAL.dir/source/Node/Node.cpp.o: CXX_COMPILER__CMPR121_FINAL_unscanned_Debug /Users/omarhboubati/Library/CloudStorage/GoogleDrive-omarhbo23@gmail.com/My$ Drive/Academics/Community$ College/Santa$ Ana$ Community$ College/CMPR-121-37589/CMPR121_FINAL/source/Node/Node.cpp || cmake_object_order_depends_target_CMPR121_FINAL
+  DEP_FILE = CMakeFiles/CMPR121_FINAL.dir/source/Node/Node.cpp.o.d
+  FLAGS = -g -std=gnu++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/CMPR121_FINAL.dir
+  OBJECT_FILE_DIR = CMakeFiles/CMPR121_FINAL.dir/source/Node
+
+build CMakeFiles/CMPR121_FINAL.dir/source/InputHandler/InputHandler.cpp.o: CXX_COMPILER__CMPR121_FINAL_unscanned_Debug /Users/omarhboubati/Library/CloudStorage/GoogleDrive-omarhbo23@gmail.com/My$ Drive/Academics/Community$ College/Santa$ Ana$ Community$ College/CMPR-121-37589/CMPR121_FINAL/source/InputHandler/InputHandler.cpp || cmake_object_order_depends_target_CMPR121_FINAL
+  DEP_FILE = CMakeFiles/CMPR121_FINAL.dir/source/InputHandler/InputHandler.cpp.o.d
+  FLAGS = -g -std=gnu++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/CMPR121_FINAL.dir
+  OBJECT_FILE_DIR = CMakeFiles/CMPR121_FINAL.dir/source/InputHandler
 
 
 # =============================================================================
@@ -87,8 +99,8 @@ build CMakeFiles/CMPR121_FINAL.dir/source/CandidateLoader/CandidateLoader.cpp.o:
 #############################################
 # Link the executable CMPR121_FINAL
 
-build CMPR121_FINAL: CXX_EXECUTABLE_LINKER__CMPR121_FINAL_Debug CMakeFiles/CMPR121_FINAL.dir/source/main.cpp.o CMakeFiles/CMPR121_FINAL.dir/source/PersonType/PersonType.cpp.o CMakeFiles/CMPR121_FINAL.dir/source/CandidateType/CandidateType.cpp.o CMakeFiles/CMPR121_FINAL.dir/source/CandidateList/CandidateList.cpp.o CMakeFiles/CMPR121_FINAL.dir/source/CandidateLoader/CandidateLoader.cpp.o
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.4
+build CMPR121_FINAL: CXX_EXECUTABLE_LINKER__CMPR121_FINAL_Debug CMakeFiles/CMPR121_FINAL.dir/source/main.cpp.o CMakeFiles/CMPR121_FINAL.dir/source/PersonType/PersonType.cpp.o CMakeFiles/CMPR121_FINAL.dir/source/CandidateType/CandidateType.cpp.o CMakeFiles/CMPR121_FINAL.dir/source/CandidateList/CandidateList.cpp.o CMakeFiles/CMPR121_FINAL.dir/source/CandidateLoader/CandidateLoader.cpp.o CMakeFiles/CMPR121_FINAL.dir/source/Node/Node.cpp.o CMakeFiles/CMPR121_FINAL.dir/source/InputHandler/InputHandler.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk
   OBJECT_DIR = CMakeFiles/CMPR121_FINAL.dir
   POST_BUILD = :
   PRE_LINK = :

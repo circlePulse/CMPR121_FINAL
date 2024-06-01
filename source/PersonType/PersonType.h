@@ -4,6 +4,7 @@
  */
 
 // making sure the header file is included only once
+#pragma once
 #ifndef PERSONTYPE_H
 #define PERSONTYPE_H
 
@@ -17,7 +18,7 @@ public:
     PersonType();
 
     // Overloaded Constructor
-    PersonType(std::string fName, std::string lName, int SSN);
+    PersonType(const std::string &fName, const std::string &lName, int SSN);
 
     // Settors
     void setPersonInfo(const std::string &fName, const std::string &lName, int SSN);
@@ -31,7 +32,7 @@ public:
 
     void printName() const;
 
-    std::string getFormattedName() const;
+    [[nodiscard]] std::string getFormattedName() const;
 
     void printSSN() const;
 

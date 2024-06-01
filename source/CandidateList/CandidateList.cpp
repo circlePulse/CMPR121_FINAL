@@ -30,8 +30,8 @@ int CandidateList::getWinner() const {
         return 0;
     }
 
-    Node *current = first;
-    Node *winner = first;
+    Node const *current = first;
+    const Node *winner = first;
 
     while (current != nullptr) {
         if (current->getCandidate().getTotalVotes() > winner->getCandidate().getTotalVotes()) {
@@ -44,13 +44,13 @@ int CandidateList::getWinner() const {
 }
 
 // Search for a candidate by SSN
-bool CandidateList::searchCandidate(int ssn) const {
+bool CandidateList::searchCandidate(int const ssn) const {
     if (first == nullptr) {
         std::cout << "=> List is empty" << std::endl;
         return false;
     }
 
-    Node *current = first;
+    Node const *current = first;
     while (current != nullptr) {
         if (current->getCandidate().getSSN() == ssn) {
             return true;
@@ -63,13 +63,13 @@ bool CandidateList::searchCandidate(int ssn) const {
 }
 
 // Print the name of a candidate by SSN
-void CandidateList::printCandidateName(int ssn) const {
+void CandidateList::printCandidateName(int const ssn) const {
     if (first == nullptr) {
         std::cout << "=> List is empty" << std::endl;
         return;
     }
 
-    Node *current = first;
+    Node const *current = first;
     while (current != nullptr) {
         if (current->getCandidate().getSSN() == ssn) {
             current->getCandidate().printName();
@@ -88,7 +88,7 @@ void CandidateList::printAllCandidates() const {
         return;
     }
 
-    Node *current = first;
+    Node const *current = first;
     while (current != nullptr) {
         current->getCandidate().printCandidateInfo();
         current = current->getLink();
@@ -96,13 +96,13 @@ void CandidateList::printAllCandidates() const {
 }
 
 // Print campus votes for a specific candidate
-void CandidateList::printCandidateCampusVotes(int ssn, int campus) const {
+void CandidateList::printCandidateCampusVotes(int const ssn, int const campus) const {
     if (first == nullptr) {
         std::cout << "=> List is empty" << std::endl;
         return;
     }
 
-    Node *current = first;
+    Node const *current = first;
     while (current != nullptr) {
         if (current->getCandidate().getSSN() == ssn) {
             std::cout << " " << current->getCandidate().getVotesByCampus(campus);
@@ -115,13 +115,13 @@ void CandidateList::printCandidateCampusVotes(int ssn, int campus) const {
 }
 
 // Print total votes for a specific candidate
-void CandidateList::printCandidateTotalVotes(int ssn) const {
+void CandidateList::printCandidateTotalVotes(int const ssn) const {
     if (first == nullptr) {
         std::cout << "=> List is empty" << std::endl;
         return;
     }
 
-    Node *current = first;
+    Node const *current = first;
     while (current != nullptr) {
         if (current->getCandidate().getSSN() == ssn) {
             std::cout << current->getCandidate().getTotalVotes();
@@ -140,7 +140,7 @@ void CandidateList::printFinalResults() const {
         return;
     }
 
-    Node *current = first;
+    Node const *current = first;
     std::cout << std::left << std::setw(25) << "Candidate Name" << std::setw(20) << "Total Votes" << std::endl;
     std::cout << "--------------------------------------------------" << std::endl;
     while (current != nullptr) {
@@ -152,10 +152,8 @@ void CandidateList::printFinalResults() const {
 
 // Delete all nodes in the list and reset member variables
 void CandidateList::destroyList() {
-    Node *temp;
-
     while (first != nullptr) {
-        temp = first;
+        Node const *temp = first;
         first = first->getLink();
         delete temp;
     }
