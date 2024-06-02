@@ -94,6 +94,12 @@
 		<Unit filename="/Users/ibrahimmemon/Documents/GitHub/CMPR121_Final/source/CandidateType/CandidateType.h">
 			<Option target="CMPR121_FINAL"/>
 		</Unit>
+		<Unit filename="/Users/ibrahimmemon/Documents/GitHub/CMPR121_Final/source/Node/Node.cpp">
+			<Option target="CMPR121_FINAL"/>
+		</Unit>
+		<Unit filename="/Users/ibrahimmemon/Documents/GitHub/CMPR121_Final/source/Node/Node.h">
+			<Option target="CMPR121_FINAL"/>
+		</Unit>
 		<Unit filename="/Users/ibrahimmemon/Documents/GitHub/CMPR121_Final/source/PersonType/PersonType.cpp">
 			<Option target="CMPR121_FINAL"/>
 		</Unit>

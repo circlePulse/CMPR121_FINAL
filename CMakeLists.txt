@@ -11,5 +11,4 @@ add_executable(CMPR121_FINAL source/main.cpp
         source/CandidateList/CandidateList.cpp
         source/CandidateLoader/CandidateLoader.cpp
         source/Node/Node.cpp
-        source/InputHandler/InputHandler.cpp
 )

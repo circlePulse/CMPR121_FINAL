@@ -201,6 +201,30 @@ source/CandidateType/CandidateType.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMPR121_FINAL.dir/build.make CMakeFiles/CMPR121_FINAL.dir/source/CandidateType/CandidateType.cpp.s
 .PHONY : source/CandidateType/CandidateType.cpp.s
 
+source/Node/Node.o: source/Node/Node.cpp.o
+.PHONY : source/Node/Node.o
+
+# target to build an object file
+source/Node/Node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMPR121_FINAL.dir/build.make CMakeFiles/CMPR121_FINAL.dir/source/Node/Node.cpp.o
+.PHONY : source/Node/Node.cpp.o
+
+source/Node/Node.i: source/Node/Node.cpp.i
+.PHONY : source/Node/Node.i
+
+# target to preprocess a source file
+source/Node/Node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMPR121_FINAL.dir/build.make CMakeFiles/CMPR121_FINAL.dir/source/Node/Node.cpp.i
+.PHONY : source/Node/Node.cpp.i
+
+source/Node/Node.s: source/Node/Node.cpp.s
+.PHONY : source/Node/Node.s
+
+# target to generate assembly for a file
+source/Node/Node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMPR121_FINAL.dir/build.make CMakeFiles/CMPR121_FINAL.dir/source/Node/Node.cpp.s
+.PHONY : source/Node/Node.cpp.s
+
 source/PersonType/PersonType.o: source/PersonType/PersonType.cpp.o
 .PHONY : source/PersonType/PersonType.o
 
@@ -267,6 +291,9 @@ help:
 	@echo "... source/CandidateType/CandidateType.o"
 	@echo "... source/CandidateType/CandidateType.i"
 	@echo "... source/CandidateType/CandidateType.s"
+	@echo "... source/Node/Node.o"
+	@echo "... source/Node/Node.i"
+	@echo "... source/Node/Node.s"
 	@echo "... source/PersonType/PersonType.o"
 	@echo "... source/PersonType/PersonType.i"
 	@echo "... source/PersonType/PersonType.s"

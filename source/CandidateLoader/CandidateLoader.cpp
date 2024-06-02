@@ -1,5 +1,4 @@
 #include "../CandidateList/CandidateList.h"
-#include "CandidateLoader.h"
 #include <fstream>
 #include <sstream>
 #include <iostream>
@@ -28,7 +27,3 @@ void loadCandidatesFromFile(CandidateList &candidateList, const std::string &fil
     }
 }
 
-void initializeCandidates(CandidateList &candidateList) {
-    std::string const filename = "../../Resources/Candidate_data.txt";
-    loadCandidatesFromFile(candidateList, filename);
-}

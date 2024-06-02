@@ -6,11 +6,10 @@
     Final Project
 
     Collaboration:
-    Ibrahim Memon, Omar Hboubti, Luke, Fernando
+    Ibrahim Memon, Omar Hboubti, Luke, Fernando Resendiz
  */
 
 #include "InputHandler/InputHandler.h"
-#include "CandidateLoader/CandidateLoader.h"
 using namespace std;
 
 void displayMenu();
