@@ -153,30 +153,6 @@ source/CandidateList/CandidateList.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMPR121_FINAL.dir/build.make CMakeFiles/CMPR121_FINAL.dir/source/CandidateList/CandidateList.cpp.s
 .PHONY : source/CandidateList/CandidateList.cpp.s
 
-source/CandidateLoader/CandidateLoader.o: source/CandidateLoader/CandidateLoader.cpp.o
-.PHONY : source/CandidateLoader/CandidateLoader.o
-
-# target to build an object file
-source/CandidateLoader/CandidateLoader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMPR121_FINAL.dir/build.make CMakeFiles/CMPR121_FINAL.dir/source/CandidateLoader/CandidateLoader.cpp.o
-.PHONY : source/CandidateLoader/CandidateLoader.cpp.o
-
-source/CandidateLoader/CandidateLoader.i: source/CandidateLoader/CandidateLoader.cpp.i
-.PHONY : source/CandidateLoader/CandidateLoader.i
-
-# target to preprocess a source file
-source/CandidateLoader/CandidateLoader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMPR121_FINAL.dir/build.make CMakeFiles/CMPR121_FINAL.dir/source/CandidateLoader/CandidateLoader.cpp.i
-.PHONY : source/CandidateLoader/CandidateLoader.cpp.i
-
-source/CandidateLoader/CandidateLoader.s: source/CandidateLoader/CandidateLoader.cpp.s
-.PHONY : source/CandidateLoader/CandidateLoader.s
-
-# target to generate assembly for a file
-source/CandidateLoader/CandidateLoader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMPR121_FINAL.dir/build.make CMakeFiles/CMPR121_FINAL.dir/source/CandidateLoader/CandidateLoader.cpp.s
-.PHONY : source/CandidateLoader/CandidateLoader.cpp.s
-
 source/CandidateType/CandidateType.o: source/CandidateType/CandidateType.cpp.o
 .PHONY : source/CandidateType/CandidateType.o
 
@@ -285,9 +261,6 @@ help:
 	@echo "... source/CandidateList/CandidateList.o"
 	@echo "... source/CandidateList/CandidateList.i"
 	@echo "... source/CandidateList/CandidateList.s"
-	@echo "... source/CandidateLoader/CandidateLoader.o"
-	@echo "... source/CandidateLoader/CandidateLoader.i"
-	@echo "... source/CandidateLoader/CandidateLoader.s"
 	@echo "... source/CandidateType/CandidateType.o"
 	@echo "... source/CandidateType/CandidateType.i"
 	@echo "... source/CandidateType/CandidateType.s"

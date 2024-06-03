@@ -105,7 +105,7 @@ void CandidateList::printCandidateCampusVotes(int const ssn, int const campus) c
     Node const *current = first;
     while (current != nullptr) {
         if (current->getCandidate().getSSN() == ssn) {
-            std::cout << " " << current->getCandidate().getVotesByCampus(campus);
+            std::cout << "\nCampus " << campus + 1 << " Votes: " << current->getCandidate().getVotesByCampus(campus);
             return;
         }
         current = current->getLink();
