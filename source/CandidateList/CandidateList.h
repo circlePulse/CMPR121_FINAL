@@ -5,10 +5,13 @@
 #include "../Node/Node.h"
 
 class CandidateList {
+private:
+    Node *first;
+    Node *last;
+    int count;
+
 public:
     CandidateList();
-
-    ~CandidateList();
 
     void addCandidate(const CandidateType &candidate);
 
@@ -28,10 +31,7 @@ public:
 
     void destroyList();
 
-private:
-    Node *first;
-    Node *last;
-    int count;
+    ~CandidateList();
 };
 
 #endif
