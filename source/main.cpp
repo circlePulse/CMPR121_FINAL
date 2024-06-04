@@ -6,7 +6,7 @@
     Final Project
 
     Collaboration:
-    Ibrahim Memon, Omar Hboubti, Luke, Fernando Resendiz
+    Ibrahim Memon, Omar Hboubati, Luke Nguyen, Fernando Resendiz
  */
 
 #include "InputHandler/InputHandler.h"
