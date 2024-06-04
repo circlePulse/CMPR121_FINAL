@@ -30,7 +30,7 @@ int CandidateList::getWinner() const {
         return 0;
     }
 
-    Node const *current = first;
+    const Node *current = first;
     const Node *winner = first;
 
     while (current != nullptr) {
@@ -50,7 +50,7 @@ bool CandidateList::searchCandidate(int const ssn) const {
         return false;
     }
 
-    Node const *current = first;
+    const Node *current = first;
     while (current != nullptr) {
         if (current->getCandidate().getSSN() == ssn) {
             return true;
@@ -69,7 +69,7 @@ void CandidateList::printCandidateName(int const ssn) const {
         return;
     }
 
-    Node const *current = first;
+    const Node *current = first;
     while (current != nullptr) {
         if (current->getCandidate().getSSN() == ssn) {
             current->getCandidate().printName();
@@ -88,7 +88,7 @@ void CandidateList::printAllCandidates() const {
         return;
     }
 
-    Node const *current = first;
+    const Node *current = first;
     while (current != nullptr) {
         current->getCandidate().printCandidateInfo();
         current = current->getLink();
@@ -140,7 +140,7 @@ void CandidateList::printFinalResults() const {
         return;
     }
 
-    Node const *current = first;
+    const Node *current = first;
     std::cout << std::left << std::setw(25) << "Candidate Name" << std::setw(20) << "Total Votes" << std::endl;
     std::cout << "--------------------------------------------------" << std::endl;
     while (current != nullptr) {
@@ -153,7 +153,7 @@ void CandidateList::printFinalResults() const {
 // Delete all nodes in the list and reset member variables
 void CandidateList::destroyList() {
     while (first != nullptr) {
-        Node const *temp = first;
+        const Node *temp = first;
         first = first->getLink();
         delete temp;
     }

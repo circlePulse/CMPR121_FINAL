@@ -32,11 +32,11 @@ CandidateType::CandidateType(const std::string &fName, const std::string &lName,
     this->votes = 0;
 }
 
-void CandidateType::updateVotesByCampus(const int campus, const int votes) {
+void CandidateType::updateVotesByCampus(const int campus, const int numVotes) {
     if (campus < 0 || campus >= NUM_OF_CAMPUSES) {
         throw std::out_of_range("Invalid Campus");
     }
-    this->campusVotes[campus] = votes;
+    this->campusVotes[campus] = numVotes;
     this->p_updateVotes();
 }
 
